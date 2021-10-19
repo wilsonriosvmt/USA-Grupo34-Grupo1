@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Motocicletas - G34 - G1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/ppalMotos.js"></script>
+</head>
+
+<body>
+
+    <h1>TIENDA DE MOTOCICLETAS - G34 - GRUPO1</h1>
+
+    <!-- *********************************** INFORMACIÓN DE MOTOS ********************************
+
+        Description:    Código para visualizar la información de MOTOS interactuando con la BD
+    -->
+    <h2>INFORMACIÓN DE MOTOS</h2>
+    <div id="resultadoMotos"></div>
+    <button onclick="traerInformacionMotos()">LISTADO DE MOTOS</button>
+    <div>
+        <input type="number" id="Mid" placeholder="id">
+        <input type="text" id="Mname" placeholder="Nombre">
+        <input type="text" id="Mbrand" placeholder="Marca">
+        <input type="number" id="Myear" placeholder="Modelo">
+        <input type="number" id="McategoryId" placeholder="categoryId">
+        <input type="text" id="Mdescription" placeholder="descripción">
+    </div>
+    <button onclick="guardarInformacionMotos()"><img class="button-img" src="./ico/btnGuardar.png"></button>
+    <button onclick="editarInformacionMotos()"><img class="button-img" src="./ico/btnActualizar.png"></button>
+
+    <!-- *********************************** INFORMACIÓN DE CLIENTES ********************************
+
+        Description:    Código para visualizar la información de CLIENTES interactuando con la BD
+    -->
+    <h2>INFORMACIÓN DE CLIENTES</h2>
+    <div id="resultadoClientes"></div>
+    <button onclick="traerInformacionClientes()">LISTADO DE CLIENTES</button>
+    <div>
+        <input type="number" id="CLid" placeholder="id">
+        <input type="text" id="CLname" placeholder="name">
+        <input type="text" id="CLemail" placeholder="email">
+        <input type="text" id="CLpass" placeholder="pass">
+        <input type="number" id="CLage" placeholder="age">
+    </div>
+    <button onclick="guardarInformacionClientes()"><img class="button-img" src="./ico/btnGuardar.png"></button>
+    <button onclick="editarInformacionCliente()"><img class="button-img" src="./ico/btnActualizar.png"></button>
+
+    <!-- *********************************** INFORMACIÓN DE CATEGORÍAS ********************************
+
+        Description:    Código para visualizar la información de CATEGORÍAS interactuando con la BD
+    -->
+    <h2>INFORMACIÓN DE CATEGORIAS</h2>
+    <div id="resultadoCategorias"></div>
+    <button onclick="traerInformacionCategorias()">LISTADO DE CATEGORÍAS</button>
+    <div>
+        <input type="number" id="Cid" placeholder="id">
+        <input type="text" id="Cname" placeholder="Categoría">
+        <input type="text" id="Cdescription" placeholder="Descripción">
+    </div>
+    <button onclick="guardarInformacionCategorias()"><img class="button-img" src="./ico/btnGuardar.png"></button>
+    <button onclick="editarInformacionMensaje()"><img class="button-img" src="./ico/btnActualizar.png"></button>
+
+    <!-- *********************************** INFORMACIÓN DE MENSAJES ********************************
+
+        Description:    Código para visualizar la información de MENSAJES interactuando con la BD
+    -->
+    <h2>INFORMACIÓN DE MENSAJES</h2>
+    <div id="resultadoMensajes"></div>
+    <button onclick="traerInformacionMensajes()">LISTADO DE MENSAJES</button>
+    <div>
+        <input type="number" id="MSid" placeholder="id">
+        <input type="text" id="MSmessagetext" placeholder="Texto del mensaje">
+    </div>
+    <button onclick="guardarInformacionMensajes()"><img class="button-img" src="./ico/btnGuardar.png"></button>
+    <button onclick="editarInformacionMensajes()"><img class="button-img" src="./ico/btnActualizar.png"></button>
+</body>
+
+</html>
